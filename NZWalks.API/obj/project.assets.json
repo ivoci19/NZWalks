@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "NZWalks.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NZWalks.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NZWalks.Data.dll": {}
+        }
       }
     }
   },
@@ -451,11 +461,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "NZWalks.Data/1.0.0": {
+      "type": "project",
+      "path": "../NZWalks.Data/NZWalks.Data.csproj",
+      "msbuildProject": "../NZWalks.Data/NZWalks.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.4",
+      "NZWalks.Data >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -485,7 +501,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\source\\repos\\NZWalks\\NZWalks.Data\\NZWalks.Data.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\NZWalks\\NZWalks.Data\\NZWalks.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
