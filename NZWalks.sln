@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZWalks.API", "NZWalks.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZWalks.Data", "NZWalks.Data\NZWalks.Data.csproj", "{7F76D4A4-3EFB-4983-A1AD-718A646C95EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{A04B7EE2-B4C0-45BA-93F5-A2F258B399BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7F76D4A4-3EFB-4983-A1AD-718A646C95EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F76D4A4-3EFB-4983-A1AD-718A646C95EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F76D4A4-3EFB-4983-A1AD-718A646C95EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04B7EE2-B4C0-45BA-93F5-A2F258B399BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04B7EE2-B4C0-45BA-93F5-A2F258B399BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04B7EE2-B4C0-45BA-93F5-A2F258B399BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04B7EE2-B4C0-45BA-93F5-A2F258B399BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
