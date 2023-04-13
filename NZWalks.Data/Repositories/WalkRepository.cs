@@ -42,13 +42,8 @@ namespace NZWalks.Data.Repositories
             return existingWalk;
         }
 
-        public async Task<IList<Walk>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool isAscending = true)
+        public async Task<IList<Walk>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool isAscending = true, int pageNumber = 1, int pageSize = 1000)
         {
-            //return await
-            //    _context.Walks
-            //    .Include(x => x.Region)
-            //    .Include(x => x.Difficulty)
-            //    .ToListAsync();
 
             var walks = _context.Walks
                .Include(x => x.Region)
@@ -78,7 +73,13 @@ namespace NZWalks.Data.Repositories
                     walks = isAscending ? walks.OrderBy(x => x.LengthInKm) : walks.OrderByDescending(x => x.LengthInKm);
                 }
             }
-            return await walks.ToListAsync();
+
+            //Pagination 
+
+            var skipResults = (pageNumber - 1) * pageSize;
+
+            return await walks.Skip(skipResults).Take(pageSize).ToListAsync();
+
         }
 
         public Task<Walk> GetAsync(Guid id)
