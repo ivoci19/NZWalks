@@ -9,7 +9,7 @@ namespace NZWalks.Data.IRepositories
 {
     public interface IWalkRepository
     {
-        Task<IList<Walk>> GetAllAsync(string? filterOn = null, string? filterQuery = null);
+        Task<IList<Walk>> GetAllAsync(string? filterOn = null, string? filterQuery = null,string? sortBy = null, bool isAscending = true);
         Task<Walk> GetAsync(Guid id);
         Task<Walk> AddAsync(Walk walk);
         Task<Walk> UpdateAsync(Guid id, Walk walk);
